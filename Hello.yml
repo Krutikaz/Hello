@@ -1,0 +1,14 @@
+---
+- name: Display a custom Hello World message
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  vars:
+    message: "Hello World from Ansible Pull!"
+
+  tasks:
+    - name: Show custom hello message
+      debug:
+        msg: "HelloWorld"
+
