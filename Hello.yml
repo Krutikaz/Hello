@@ -2,7 +2,7 @@
 - name: Print Hello World using pull model
   hosts: localhost
   connection: local
-  gather_facts: false
+  gather_facts: true
 
   tasks:
     - name: Print Hello World
